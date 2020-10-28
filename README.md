@@ -213,6 +213,7 @@ Thanks goes to these wonderful people
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
@@ -226,6 +227,16 @@ the exercise and instruction.
 
 At the end of the workshop, please go to this URL to give overall feedback.
 Thank you! https://kcd.im/rf-ws-feedback
+
+## Notes
+
+- unpkg.com: A CDN for all modules in npm, which means that every module on npm
+  is also on unpkg.
+- UMD: Universal Module Definition - UMD is a pattern of universal module
+  definition for JavaScript modules. These modules are capable of working
+  everywhere, be it in the client, on the server or elsewhere. The UMD pattern
+  typically attempts to offer compatibility with the most popular script loaders
+  of the day (e.g RequireJS amongst others).
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
