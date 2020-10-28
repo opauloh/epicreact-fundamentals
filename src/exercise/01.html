@@ -22,12 +22,14 @@
     <title>Hello World!</title>
   </head>
   <body>
-    <div id="root"></div>
     <script type="module">
+      const root = document.createElement('div')
+      document.body.append(root)
       const element = document.createElement('div')
       element.textContent = 'Hello World'
       element.className = 'container'
-      document.getElementById('root').append(element)
+
+      root.append(element)
     </script>
   </body>
 </html>
