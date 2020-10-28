@@ -237,6 +237,13 @@ Thank you! https://kcd.im/rf-ws-feedback
   everywhere, be it in the client, on the server or elsewhere. The UMD pattern
   typically attempts to offer compatibility with the most popular script loaders
   of the day (e.g RequireJS amongst others).
+- REPL: A read–eval–print loop, also termed an interactive toplevel or language
+  shell, is a simple interactive computer programming environment that takes
+  single user inputs, executes them, and returns the result to the user
+- Babel have a online
+  [REPL](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=usage&spec=false&loose=false&code_lz=MYewdgzgLgBArgSxgXhgHgCYIG4D40QAOAhmLgBICmANtSGgPRGm7rNkDqIATtRo-3wMseAFBA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=true&targets=&version=7.12.3&externalPlugins=)
+- Differences between HTML and JSX can be viewed
+  [here](https://reactjs.org/docs/dom-elements.html#differences-in-attributes)
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
