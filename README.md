@@ -220,15 +220,7 @@ This project follows the
 [all-contributors](https://github.com/kentcdodds/all-contributors)
 specification. Contributions of any kind welcome!
 
-## Workshop Feedback
-
-Each exercise has an Elaboration and Feedback link. Please fill that out after
-the exercise and instruction.
-
-At the end of the workshop, please go to this URL to give overall feedback.
-Thank you! https://kcd.im/rf-ws-feedback
-
-## Notes
+## My Notes
 
 - unpkg.com: A CDN for all modules in npm, which means that every module on npm
   is also on unpkg.
@@ -244,6 +236,19 @@ Thank you! https://kcd.im/rf-ws-feedback
   [REPL](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=usage&spec=false&loose=false&code_lz=MYewdgzgLgBArgSxgXhgHgCYIG4D40QAOAhmLgBICmANtSGgPRGm7rNkDqIATtRo-3wMseAFBA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=true&targets=&version=7.12.3&externalPlugins=)
 - Differences between HTML and JSX can be viewed
   [here](https://reactjs.org/docs/dom-elements.html#differences-in-attributes)
+- few examples of Babel output for JSX:
+
+```
+ui = <Capitalized /> // React.createElement(Capitalized)
+ui = <property.access /> // React.createElement(property.access)
+ui = <Property.Access /> // React.createElement(Property.Access)
+ui = <Property['Access'] /> // SyntaxError
+ui = <lowercase /> // React.createElement('lowercase')
+ui = <kebab-case /> // React.createElement('kebab-case')
+ui = <Upper-Kebab-Case /> // React.createElement('Upper-Kebab-Case')
+ui = <Upper_Snake_Case /> // React.createElement(Upper_Snake_Case)
+ui = <lower_snake_case /> // React.createElement('lower_snake_case')
+```
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
