@@ -250,6 +250,9 @@ ui = <Upper_Snake_Case /> // React.createElement(Upper_Snake_Case)
 ui = <lower_snake_case /> // React.createElement('lower_snake_case')
 ```
 
+- PropTypes
+  [examples](https://reactjs.org/docs/typechecking-with-proptypes.html)
+
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
