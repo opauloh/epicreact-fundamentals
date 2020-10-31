@@ -13,12 +13,10 @@
     // function message({children}) {
     //   return <div className="message">{children}</div>
     // }
-    function Message({subject, greeting}) {
-      return (
-        <React.Fragment>
-          {greeting}, {subject}
-        </React.Fragment>
-      )
+    function Message({subject, greeting, as = 'div'}) {
+      return React.createElement(as, {
+        children: `${greeting}, ${subject}`,
+      })
     }
 
     Message.propTypes = {
@@ -26,7 +24,7 @@
       subject: PropTypes.string.isRequired,
     }
 
-    const element = <Message greeting="Hello" subject="world" />
+    const element = <Message as="h1" greeting="Hello" subject="world" />
 
     ReactDOM.render(element, document.getElementById('root'))
   </script>
