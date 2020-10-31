@@ -252,6 +252,7 @@ ui = <lower_snake_case /> // React.createElement('lower_snake_case')
 
 - PropTypes
   [examples](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- React remove all PropTypes code when in production, because of performance
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
