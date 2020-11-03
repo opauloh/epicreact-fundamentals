@@ -3,18 +3,15 @@
 
 import React from 'react'
 
-const errorStyle = {
-  color: 'red',
-}
 function UsernameForm({onSubmitUsername}) {
-  const [username, setUsername] = React.useState(null)
+  const [username, setUsername] = React.useState('')
 
   const handleChange = event => {
     setUsername(event.target.value.toLowerCase())
   }
   const handleSubmit = event => {
     event.preventDefault()
-    onSubmitUsername(username)
+    onSubmitUsername(event.target.elements.username.value)
   }
   // 🐨 make sure to associate the label to the input.
   // to do so, set the value of 'htmlFor' prop of the label to the id of input
@@ -25,7 +22,6 @@ function UsernameForm({onSubmitUsername}) {
         <input
           type="text"
           id="username"
-          name="username"
           onChange={handleChange}
           value={username}
         />
