@@ -255,22 +255,35 @@ ui = <lower_snake_case /> // React.createElement('lower_snake_case')
 - React remove all PropTypes code when in production, because of performance
 - \$0 "dollar zero" on the browser's console select the element that is
   currently selected with the mouse
+- React create a synthetic event for form submit handlers, this is for
+  performance reasons, but if you need for some reason to access the real event,
+  you can access in `event.nativeEvent`
+- `console.dir(obj)` - is the way to see all the properties of a specified
+  JavaScript object in console by which the developer can easily get the
+  properties of the object.
+- <!-- prettier-ignore-start -->
 
-<!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
-[build-badge]: https://img.shields.io/travis/kentcdodds/react-fundamentals.svg?style=flat-square&logo=travis
+[build-badge]:
+  https://img.shields.io/travis/kentcdodds/react-fundamentals.svg?style=flat-square&logo=travis
 [build]: https://travis-ci.com/kentcdodds/react-fundamentals
-[license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
+[license-badge]:
+  https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
 [license]: https://github.com/kentcdodds/react-fundamentals/blob/main/LICENSE
-[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]: https://github.com/kentcdodds/react-fundamentals/blob/main/CODE_OF_CONDUCT.md
+[coc-badge]:
+  https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[coc]:
+  https://github.com/kentcdodds/react-fundamentals/blob/main/CODE_OF_CONDUCT.md
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 [all-contributors]: https://github.com/kentcdodds/all-contributors
-[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
+[win-path]:
+  https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
 [issue]: https://github.com/kentcdodds/react-fundamentals/issues/new
-[win-build-badge]: https://img.shields.io/appveyor/ci/kentcdodds/react-fundamentals.svg?style=flat-square&logo=appveyor
+[win-build-badge]:
+  https://img.shields.io/appveyor/ci/kentcdodds/react-fundamentals.svg?style=flat-square&logo=appveyor
 [win-build]: https://ci.appveyor.com/project/kentcdodds/react-fundamentals
-<!-- prettier-ignore-end -->
+
+  <!-- prettier-ignore-end -->
