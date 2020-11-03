@@ -253,6 +253,8 @@ ui = <lower_snake_case /> // React.createElement('lower_snake_case')
 - PropTypes
   [examples](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - React remove all PropTypes code when in production, because of performance
+- \$0 "dollar zero" on the browser's console select the element that is
+  currently selected with the mouse
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
